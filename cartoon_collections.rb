@@ -1,10 +1,26 @@
 def roll_call_dwarves(a)
   array = []
   a.each_with_index do |x, index|
+  if index < a.length/2
     array << "#{index + 1} #{x}"
+  end
   end
   puts array
 end
+
+$number = 0 
+
+def take_a_number(line)
+  $number += 1
+  line.push(number)
+end
+
+
+
+
+
+
+
 
 def summon_captain_planet(a)
   a.collect do |x|
@@ -26,6 +42,16 @@ def find_the_cheese(a)
     end
   end
 end
+
+
+def words_with_b(words)
+words_with_b.select do |x|
+  x.start_with?("b")
+end
+end
+
+
+
 
 # include? returns true or false but its operating under the .find method so it'll return the value or nil
 
